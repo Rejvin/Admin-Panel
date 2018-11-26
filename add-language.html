@@ -1,0 +1,1592 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+<head>
+	<!-- Metas -->
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="keywords" content="Admin Template" />
+	<meta name="description" content="Admin panel">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+	<!-- Title  -->
+	<title>Admin panel</title>
+
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="assets/css/font-awesome.css">
+
+	<!-- Themify CSS -->
+	<link rel="stylesheet" href="assets/css/themify-icons.css">
+
+	<!-- Bootstrap Min CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+
+	<!-- Bootstrap datatables CSS -->
+	<link rel="stylesheet" href="assets/css/dataTables.bootstrap.min.css">
+
+	<!-- Bootstrap color picker CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap-coloroicker.css">
+
+	<!-- Bootstrap tags CSS-->
+	<link rel="stylesheet" href="assets/css/jquery-tagsinput.min.css">
+
+	<!-- Responsive bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/responsive.bootstrap.min.css">
+
+	<!-- Perfect Scrollbar CSS -->
+	<link href="assets/css/perfect-scrollbar.min.css" rel="stylesheet">
+
+	<!-- Global CSS -->
+	<link rel="stylesheet" href="assets/css/global-style.css">
+
+	<!-- Common CSS -->
+	<link rel="stylesheet" href="assets/css/common.css">
+	
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!-- Responsive CSS -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+<body>
+	<div class="admin__wrap">
+		<!-- Menu start -->
+		<div class="wrap__left">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-right">
+						<button type="button" id="sidebarCollapse" class="navbar-btn">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>
+				</div>
+			</nav>
+
+			<div class="admin__sidebar" style="background-image: url(assets/images/menu/background-menu.JPG);">
+				<div class="sidebar__wrap">
+					<nav id="sidebar__menu">
+						<ul class="list-unstyled profile">
+							<li>
+								<div class="admin d-flex align-items-center">
+									<div class="admin__img">
+										<img src="assets/images/menu/admin.jpg" alt="profile image">
+									</div>
+									<div class="admin__title">    
+										<a href="#homeSubmenu">Name <span>Administrator</span></a>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<ul class="list-unstyled components">
+							<li class="active">
+								<a href="index.html"><i class="fas fa-home"></i>Dashboard</a>
+							</li>
+							<li>
+								<a href="#orders" data-toggle="collapse" aria-expanded="false"><i class="fas fa-dollar-sign"></i>Orders</a>
+								<ul class="collapse list-unstyled submenu" id="orders">
+									<li><a href="all-orders.html"><i class="ti-angle-right"></i>All Orders</a></li>
+									<li><a href="pending-orders.html"><i class="ti-angle-right"></i>Pending Orders</a></li>
+									<li><a href="processing-orders.html"><i class="ti-angle-right"></i>Processing Orders</a></li>
+									<li><a href="completed-orders.html"><i class="ti-angle-right"></i>Completed Orders</a></li>
+									<li><a href="declined-orders.html"><i class="ti-angle-right"></i>Declined Orders</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#products" data-toggle="collapse" aria-expanded="false"><i class="fas fa-shopping-cart"></i>Products</a>
+								<ul class="collapse list-unstyled submenu" id="products">
+									<li><a href="add-new-product.html"><i class="ti-angle-right"></i>Add New Product</a></li>
+									<li><a href="all-products.html"><i class="ti-angle-right"></i>All Products</a></li>
+									<li><a href="deactive-products.html"><i class="ti-angle-right"></i>Deactivated Products</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#customers" data-toggle="collapse" aria-expanded="false"><i class="fas fa-users"></i>Customers</a>
+								<ul class="collapse list-unstyled submenu" id="customers">
+									<li><a href="customer-list.html"><i class="ti-angle-right"></i>Customers List</a></li>
+									<li><a href="customer-withdraws.html"><i class="ti-angle-right"></i>Withdraws</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#vendors" data-toggle="collapse" aria-expanded="false"><i class="fas fa-users"></i>Vendors</a>
+								<ul class="collapse list-unstyled submenu" id="vendors">
+									<li><a href="vendors.html"><i class="ti-angle-right"></i>Vendors List</a></li>
+									<li><a href="vendor-withdraws.html"><i class="ti-angle-right"></i>Withdraws</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#manageCategories" data-toggle="collapse" aria-expanded="false"><i class="fas fa-sitemap"></i>Manage Category</a>
+								<ul class="collapse list-unstyled submenu" id="manageCategories">
+									<li><a href="main-category.html"><i class="ti-angle-right"></i> Main category</a></li>
+									<li><a href="sub-category.html"><i class="ti-angle-right"></i> Sub category</a></li>
+									<li><a href="child-category.html"><i class="ti-angle-right"></i> Child category</a></li>
+								</ul>
+							</li>
+							<li><a href="reviews.html"><i class="fas fa-star"></i>Reviews</a></li>
+							<li><a href="coupons.html"><i class="fas fa-percent"></i>Set Coupons</a></li>
+							<li><a href="blog.html"><i class="fas fa-file-alt"></i>Blog</a></li>
+							<li><a href="messages.html"><i class="fas fa-envelope"></i>Messages</a></li>
+							<li>
+								<a href="#generalSettings" data-toggle="collapse" aria-expanded="false"><i class="fas fa-cogs"></i>General Settings</a>
+								<ul class="collapse list-unstyled submenu" id="generalSettings">
+									<li><a href="logo.html"><i class="ti-angle-right"></i>Logo</a></li>
+									<li><a href="favicon.html"><i class="ti-angle-right"></i>Favicon</a></li>
+									<li><a href="loader.html"><i class="ti-angle-right"></i>Loader</a></li>
+									<li><a href="background-img.html"><i class="ti-angle-right"></i>Background Image</a></li>
+									<li><a href="review-background-img.html"><i class="ti-angle-right"></i>Review Background Image</a></li>
+									<li><a href="success-message.html"><i class="ti-angle-right"></i>Success Messages</a></li>
+									<li><a href="pickup-location.html"><i class="ti-angle-right"></i>Picup Location</a></li>
+									<li><a href="website-content.html"><i class="ti-angle-right"></i>Website Contents</a></li>
+									<li><a href="footer.html"><i class="ti-angle-right"></i>Footer</a></li>
+									<li><a href="vendor-registration.html"><i class="ti-angle-right"></i>Vendor Registration Option</a></li>
+									<li><a href="affiliate-information.html"><i class="ti-angle-right"></i>Affiliate Informations</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#homePageSettings" data-toggle="collapse" aria-expanded="false"><i class="fas fa-edit"></i>Home Page Settings</a>
+								<ul class="collapse list-unstyled submenu" id="homePageSettings">
+									<li><a href="sliders.html"><i class="ti-angle-right"></i>Sliders</a></li>
+									<li><a href="services.html"><i class="ti-angle-right"></i>Service Section</a></li>
+									<li><a href="top-banners.html"><i class="ti-angle-right"></i>Top Banners</a></li>
+									<li><a href="bottom-banners.html"><i class="ti-angle-right"></i>Bottom Banners</a></li>
+									<li><a href="countdown.html"><i class="ti-angle-right"></i>Countdown Section</a></li>
+									<li><a href="homepage-video.html"><i class="ti-angle-right"></i>Home Page Video</a></li>
+									<li><a href="testimonial.html"><i class="ti-angle-right"></i>Testimonial</a></li>
+									<li><a href="brands.html"><i class="ti-angle-right"></i>Brands</a></li>
+									<li><a href="subscribe-popup.html"><i class="ti-angle-right"></i>Subscribe Popup Forms</a></li>
+									<li><a href="homepage-customization.html"><i class="ti-angle-right"></i>Customizations</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#menuPageSettings" data-toggle="collapse" aria-expanded="false"><i class="fas fa-file-code"></i>Menu Page Settings</a>
+								<ul class="collapse list-unstyled submenu" id="menuPageSettings">
+									<li><a href="faq-page.html"><i class="ti-angle-right"></i>FAQ Page</a></li>
+									<li><a href="contact-us-page.html"><i class="ti-angle-right"></i>Contact Us Page</a></li>
+									<li><a href="others-page.html"><i class="ti-angle-right"></i>Other Pages</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#paymentSettings" data-toggle="collapse" aria-expanded="false"><i class="far fa-credit-card"></i>Payment Settings</a>
+								<ul class="collapse list-unstyled submenu" id="paymentSettings">
+									<li><a href="payment-information.html"><i class="ti-angle-right"></i>Payment Informations</a></li>
+									<li><a href="payment-gateways.html"><i class="ti-angle-right"></i>Payment Gateways</a></li>
+									<li><a href="currency-settings.html"><i class="ti-angle-right"></i>Currency Settings</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#socialSettings" data-toggle="collapse" aria-expanded="false"><i class="fas fa-paper-plane"></i>Social Settings</a>
+								<ul class="collapse list-unstyled submenu" id="socialSettings">
+									<li><a href="social-links.html"><i class="ti-angle-right"></i>Social Links</a></li>
+									<li><a href="facebook-login.html"><i class="ti-angle-right"></i>Facebook Login</a></li>
+									<li><a href="google-login.html"><i class="ti-angle-right"></i>Google Login</a></li>
+								</ul>
+							</li>
+							<li><a href="staffs.html"><i class="fas fa-user-secret"></i>Manage Staffs</a></li>
+							<li><a href="language-settings.html"><i class="fas fa-language"></i>Language Settings</a></li>
+							<li>
+								<li>
+									<a href="#seoTools" data-toggle="collapse" aria-expanded="false"><i class="fas fa-wrench"></i>SEO Tools</a>
+									<ul class="collapse list-unstyled submenu" id="seoTools">
+										<li><a href="popular-products.html"><i class="ti-angle-right"></i> Popular Products</a></li>
+										<li><a href="google-analytics.html"><i class="ti-angle-right"></i> Google analytics</a></li>
+										<li><a href="meta-keys.html"><i class="ti-angle-right"></i> Website meta keywords</a></li>
+									</ul>
+								</li>
+								<li><a href="subscribers.html"><i class="fas fa-users-cog"></i>Subscribers</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div> 
+			</div>
+			<!-- Menu end -->
+
+			<!-- Content start -->
+			<div class="wrap__right">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xl-12">
+							<div class="panel panel-default common">
+								<!-- Admin haeder start -->
+								<div class="panel-heading">
+									<div class="admin__header">
+										<div class="row reorder-xs align-items-center">
+											<div class="col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
+												<div class="header__title">
+													<div class="header__btn d-flex">
+														<h3>Add Language</h3>
+														<a href="language-settings.html" class=" add-btn back"><i class="fas fa-arrow-left"></i> Back</a>
+													</div>
+													<p>Dashboard <i class="fa fa-angle-right"></i> Language Settings <i class="fa fa-angle-right"></i> Add</p>
+												</div>
+											</div>
+											<div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
+												<div class="header-menu dropdown text-right">
+													<!-- profile message -->
+													<div class="header__wishlist message">
+														<a class="dropdown-toggle" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+															<img src="assets/images/admin-header/message.png" alt="flag image">
+															<span>4</span>
+														</a>
+
+														<div class="header__wishlist-content dropdown-menu">
+															<div class="header__wishlist-title">
+																<h5>Wishlist</h5>
+																<p>Clear All</p>
+															</div>
+															<div class="wishlist">
+																<div class="wishlist__img">
+																	<i class="fa fa-heart"></i>
+																</div>
+																<div class="wishlist__text">
+																	<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</h5>
+																	<p>1 min ago</p>
+																</div>
+															</div>
+														</div>
+													</div>
+													
+													<!-- profile wishlist -->
+													<div class="header__wishlist">
+														<a class="dropdown-toggle" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+															<img src="assets/images/admin-header/flag.png" alt="flag image">
+															<span>4</span>
+														</a>
+
+														<div class="header__wishlist-content dropdown-menu">
+															<div class="header__wishlist-title">
+																<h5>Wishlist</h5>
+																<p>Clear All</p>
+															</div>
+															<div class="wishlist">
+																<div class="wishlist__img">
+																	<i class="fa fa-heart"></i>
+																</div>
+																<div class="wishlist__text">
+																	<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</h5>
+																	<p>1 min ago</p>
+																</div>
+															</div>
+
+															<div class="wishlist">
+																<div class="wishlist__img">
+																	<i class="fa fa-heart"></i>
+																</div>
+																<div class="wishlist__text">
+																	<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</h5>
+																	<p>1 min ago</p>
+																</div>
+															</div>
+
+															<div class="wishlist">
+																<div class="wishlist__img">
+																	<i class="fa fa-heart"></i>
+																</div>
+																<div class="wishlist__text">
+																	<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</h5>
+																	<p>1 min ago</p>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- profile Nitification -->
+													<div class="header__notification">
+														<a class="dropdown-toggle" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+															<img src="assets/images/admin-header/notification.png" alt="notification image">
+															<span>80</span>
+														</a>
+
+														<div class="header__notification-content dropdown-menu">
+															<div class="header__notification-title">
+																<h5>Notification</h5>
+																<p>Clear All</p>
+															</div>
+															<div class="notification">
+																<div class="notification__img">
+																	<i class="fa fa-heart"></i>
+																</div>
+																<div class="notification__text">
+																	<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</h5>
+																	<p>1 min ago</p>
+																</div>
+															</div>
+															<div class="notification gray">
+																<div class="notification__img">
+																	<i class="fa fa-heart"></i>
+																</div>
+																<div class="notification__text">
+																	<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</h5>
+																	<p>1 min ago</p>
+																</div>
+															</div>
+															<div class="notification">
+																<div class="notification__img">
+																	<i class="fa fa-heart"></i>
+																</div>
+																<div class="notification__text">
+																	<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</h5>
+																	<p>1 min ago</p>
+																</div>
+															</div>
+															<div class="notification gray">
+																<div class="notification__img">
+																	<i class="fa fa-heart"></i>
+																</div>
+																<div class="notification__text">
+																	<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</h5>
+																	<p>1 min ago</p>
+																</div>
+															</div>
+															<div class="notification">
+																<div class="notification__img">
+																	<i class="fa fa-heart"></i>
+																</div>
+																<div class="notification__text">
+																	<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</h5>
+																	<p>1 min ago</p>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Comments area -->
+													<div class="header__comments">
+														<a class="dropdown-toggle" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+															<img src="assets/images/admin-header/list.png" alt="list image">
+															<span>6</span>
+														</a>
+
+														<div class="header__comments-content dropdown-menu">
+															<div class="header__comments-title">
+																<h5>Chat</h5>
+																<p>Clear All</p>
+															</div>
+															<div class="comments">
+																<div class="comments__img">
+																	<img src="assets/images/admin-header/download.jpg" alt="comments image">
+																</div>
+																<div class="comments__text">
+																	<h5>Client Name</h5>
+																	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</p>
+																</div>
+															</div>
+															<div class="comments">
+																<div class="comments__img">
+																	<img src="assets/images/admin-header/download.jpg" alt="comments image">
+																</div>
+																<div class="comments__text">
+																	<h5>Client Name</h5>
+																	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</p>
+																</div>
+															</div>
+															<div class="comments">
+																<div class="comments__img">
+																	<img src="assets/images/admin-header/download.jpg" alt="comments image">
+																</div>
+																<div class="comments__text">
+																	<h5>Client Name</h5>
+																	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</p>
+																</div>
+															</div>
+															<div class="comments">
+																<div class="comments__img">
+																	<img src="assets/images/admin-header/download.jpg" alt="comments image">
+																</div>
+																<div class="comments__text">
+																	<h5>Client Name</h5>
+																	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</p>
+																</div>
+															</div>
+															<div class="comments">
+																<div class="comments__img">
+																	<img src="assets/images/admin-header/download.jpg" alt="comments image">
+																</div>
+																<div class="comments__text">
+																	<h5>Client Name</h5>
+																	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</p>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- view profile -->
+													<div class="header__profile">
+														<div class="profile__img dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+															<img src="assets/images/menu/admin.jpg" alt="profile image"> <span>Admin</span>
+														</div>
+														<div class="profile__content dropdown-menu">
+															<h5>Welcome!</h5>
+															<a href="edit-profile.html"><i class="fas fa-user"></i> Edit Profile</a>
+															<a href="change-password.html"><i class="fas fa-cog"></i> Change Password</a>
+															<a href=""><i class="fas fa-power-off"></i> Logout</a>
+														</div>
+													</div>
+												</div> 
+											</div>
+										</div>   
+									</div>
+								</div>
+								<!-- Admin haeder end -->
+
+								<!-- Admin content start -->
+								<div class="panel-body common pt-30 pb-30 pl-10 pr-10">
+									<div class="row justify-content-center">
+										<div class="col-xl-10">
+											<div class="top-banner-wrap">
+												<div class="common-form">
+													<form>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Language Direction *</label>
+															<div class="col-sm-7">
+																<select class="form-control" name="" id="">
+																	<option value="">Left to right</option>
+																</select>
+															</div>
+														</div>
+														<hr/>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Language Name *</label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Language Name" required>
+															</div>
+														</div>
+														<hr/>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">All Categories * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="All Categories" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Home * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Home" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">About * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="About" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Blog * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Blog" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Blogs * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Blogs" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Blog Details * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Blog Details" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Recent Posts * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Recent Posts" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Blog Contact * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Blog Contact" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Faq * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Faq" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Faq Title * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Faq Title" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Faq Page Header * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Faq Page Header" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Contact * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Contact" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Others * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Others" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Support * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Support" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Search Heading * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Search Heading" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Search Placeholder * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Search Placeholder" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Front Page Wish List * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Front Page Wish List" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Front Page Wish List Heading * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Front Page Wish List Heading" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">My Account * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="My Account" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">My Cart * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="My Cart" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Cart Empty * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Cart Empty" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Total * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Total" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Checkout * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Checkout" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">View Cart * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="View Cart" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Top Category * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Top Category" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Featured Products * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Featured Products" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Featured * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Featured" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Best Seller * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Best Seller" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Top Rate * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Top Rate" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">New Arrival Products * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="New Arrival Products" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Hot Sale * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Hot Sale" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Latest Special * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Latest Special" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Big Save * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Big Save" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Weeks * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Weeks" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Days * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Days" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Hours * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Hours" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Minutes * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Minutes" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Seconds * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Seconds" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Shop Now * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Shop Now" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Add To Cart * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Add To Cart" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Out Of Stock * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Out Of Stock" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Available * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Available" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Quantity * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Quantity" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Size * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Size" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Color * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Color" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Quick Review * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Quick Review" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Filter Option * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Filter Option" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Sort Latest * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Sort Latest" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Sort Oldest * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Sort Oldest" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Sort Lowest * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Sort Lowest" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Sort Highest * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Sort Highest" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">All Categories * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="All Categories" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Price * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Price" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Price Search * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Price Search" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Popular Tags * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Popular Tags" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Tag * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Tag" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Search Result * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Search Result" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Reviews * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Reviews" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Product Details * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Product Details" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Full Description * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Full Description" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Return & Policy * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Return & Policy" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Submit Review * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Submit Review" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">No Review * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="No Review" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Related Products * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Related Products" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Your Rating * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Your Rating" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Cart Remove * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Cart Remove" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Cart Image * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Cart Image" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Cart Product Name * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Cart Product Name" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Cart Edit * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Cart Edit" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Cart Quantity * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Cart Quantity" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Cart Unit Price * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Cart Unit Price" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Cart Sub Total * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Cart Sub Total" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Continue Shopping * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Continue Shopping" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Proceed Checkout * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Proceed Checkout" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Order Details * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Order Details" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Billing Details * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Billing Details" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Shipping Cost * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Shipping Cost" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Order Now * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Order Now" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Payment Method <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Payment Method" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Paypal * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Paypal" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Credit Card * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Credit Card" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Mobile Money * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Mobile Money" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Bank Wire * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Bank Wire" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Cash On Delivery * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Cash On Delivery" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Ship To Address * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Ship To Address" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Ship To Another Address * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Ship To Another Address" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Pick Up * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Pick Up" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Pick Up Location * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Pick Up Location" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Order Notes * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Order Notes" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Transaction * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Transaction" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">PickUp Location * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="PickUp Location" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Contact Name * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Contact Name" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Contact Phone * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Contact Phone" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Contact Email * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Contact Email" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Contact Reply * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Contact Reply" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Contact Enter Code * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Contact Enter Code" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Sign In / Up * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Sign In / Up" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Sign In * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Sign In" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Login * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Login" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Sign Up * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Sign Up" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Sign Up Heading * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Sign Up Heading" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Sign Up Password * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Sign Up Password" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Sign Up Confirm Password * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Sign Up Confirm Password" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Welcome * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Welcome" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Edit Profile * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Edit Profile" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Reset Password * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Reset Password" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Orders * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Orders" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Sign Out * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Sign Out" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Current Password * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Current Password" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">New Password * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="New Password" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Re-Type New Password * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Re-Type New Password" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Change Password * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Change Password" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Video Title * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Video Title" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Latest Blogs * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Latest Blogs" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">View Details Button * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="View Details Button" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Review Title * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Review Title" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Happy Customer * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Happy Customer" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Subscribe * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Subscribe" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Subscribe Button * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Subscribe Button" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Subscribe Placeholder * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Subscribe Placeholder" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Footer Links * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Footer Links" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Contact Button * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Contact Button" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Forgot Password * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Forgot Password" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Forgot Password Title * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Forgot Password Title" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Forgot Password Email * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Forgot Password Email" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Forgot Password Button * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Forgot Password Button" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Already Account <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Already Account" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Blog Source * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Blog Source" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Full Name * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Full Name" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Phone Number * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Phone Number" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Email Address * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Email Address" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">City * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="City" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Address * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Address" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Fax * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Fax" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Postal Code * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Postal Code" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Review Description * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Review Description" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Update Button * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Update Button" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Update Success * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Update Success" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Country * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Country" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Select Country * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Select Country" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Coupon Code * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Coupon Code" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Enter Coupon * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Enter Coupon" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Apply Coupon * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Apply Coupon" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Discount * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Discount" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Final Total * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Final Total" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Vendor Description * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Vendor Description" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Linked Accounts * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Linked Accounts" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Vendor Registration * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Vendor Registration" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Vendor Shop Name * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Vendor Shop Name" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Vendor Owner Name * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Vendor Owner Name" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Vendor Shop Number * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Vendor Shop Number" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Vendor Shop Address * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Vendor Shop Address" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Vendor Registration Number * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Vendor Registration Number" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Vendor Message * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Vendor Message" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">This Field is Optional * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="This Field is Optional" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Sale * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Sale" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Shop Name * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Shop Name" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">User Dashboard * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="User Dashboard" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">New Conversations * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="New Conversations" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">New Conversation Alert * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="New Conversation Alert" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">No New Converstions * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="No New Converstions" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Clear All * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Clear All" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Favorite Product * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Favorite Product" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Order Processing * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Order Processing" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Order Completed * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Order Completed" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Affilate Bonus * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Affilate Bonus" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Current Balance * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Current Balance" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Item Sold * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Item Sold" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Total Earning * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Total Earning" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">View All * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="View All" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Customer * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Customer" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">View Website * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="View Website" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Dashboard * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Dashboard" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Wishlist * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Wishlist" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Favorite Seller * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Favorite Seller" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Messages * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Messages" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Purchased Items * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Purchased Items" required>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label for="setup_logo" class="col-sm-4 col-form-label">Affilate Settings * <span>(In Any Language)</span></label>
+															<div class="col-sm-7">
+																<input type="text" class="form-control" name="" id="" placeholder="Affilate Settings" required>
+															</div>
+														</div>
+														<div class="form-group row mb-0">
+															<div class="col-sm-12 text-center">
+																<button name="addProduct_btn" type="submit" class="btn btn-success form-btn">Submit</button>
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Admin content end -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Content end -->
+		</div>
+		
+		
+
+
+		<!-- jQuary Library -->
+		<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+		<script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+
+		<!-- Bootstrap Min JS -->
+		<script src="assets/js/bootstrap.min.js"></script>
+
+		<!--Datatables JS-->
+		<script src="assets/js/jquery.dataTables.min.js"></script>
+
+		<!-- Bootstrap datatables JS -->
+		<script src="assets/js/dataTables.bootstrap.min.js"></script>
+
+		<!-- Datatables responsive JS-->
+		<script src="assets/js/dataTables.responsive.min.js"></script>
+
+		<!-- Bootstrap colorpicker JS -->
+		<script src="assets/js/bootstrap-colorpicker.min.js"></script>
+
+		<!-- Bootstrap tags JS-->
+		<script src="assets/js/jquery-tagsinput.min.js"></script>
+
+		<!-- Responsive Bootstrap JS-->
+		<script src="assets/js/responsive.bootstrap.min.js"></script>
+
+		<!--Easing JS-->
+		<script src="assets/js/jquery.easing.1.3.js"></script>
+
+		<!--Wow JS-->
+		<script src="assets/js/wow.min.js"></script>
+
+		<!--Perfect scrollbar JS-->
+		<script src="assets/js/perfect-scrollbar.jquery.min.js"></script>
+
+		<!--Canvas JS-->
+		<script src="assets/js/jquery.canvasjs.min.js"></script>
+
+		<!-- Google Main JS(all jQuary activation code here and always it will be bottom of all script tag) -->
+		<script src="assets/js/main.js"></script>
+	</body>
+	</html>

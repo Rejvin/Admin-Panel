@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+<head>
+	<!-- Metas -->
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="keywords" content="Admin Template" />
+	<meta name="description" content="Admin panel">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+	<!-- Title  -->
+	<title>Admin panel</title>
+
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="assets/css/font-awesome.css">
+
+	<!-- Themify CSS -->
+	<link rel="stylesheet" href="assets/css/themify-icons.css">
+
+	<!-- Bootstrap Min CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+
+	<!-- Bootstrap datatables CSS -->
+	<link rel="stylesheet" href="assets/css/dataTables.bootstrap4.css">
+
+	<!-- Bootstrap color picker CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap-coloroicker.css">
+
+	<!-- Bootstrap tags CSS-->
+	<link rel="stylesheet" href="assets/css/bootstrap-tags.css">
+
+	<!-- Responsive bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/responsive.bootstrap.min.css">
+
+	<!-- Perfect Scrollbar CSS -->
+	<link href="assets/css/perfect-scrollbar.min.css" rel="stylesheet">
+
+	<!-- Global CSS -->
+	<link rel="stylesheet" href="assets/css/global-style.css">
+
+	<!-- Common CSS -->
+	<link rel="stylesheet" href="assets/css/common.css">
+	
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!-- Responsive CSS -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+<body>
+	<div class="admin__wrap">
+		<!-- Menu start -->
+		<div class="wrap__left">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-right">
+						<button type="button" id="sidebarCollapse" class="navbar-btn">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>
+				</div>
+			</nav>
+
+			<div class="admin__sidebar" style="background-image: url(assets/images/menu/background-menu.JPG);">
+				<div class="sidebar__wrap">
+					<nav id="sidebar__menu">
+						<ul class="list-unstyled profile">
+							<li>
+								<div class="admin d-flex align-items-center">
+									<div class="admin__img">
+										<img src="assets/images/menu/admin.jpg" alt="profile image">
+									</div>
+									<div class="admin__title">    
+										<a href="#homeSubmenu">Name <span>Administrator</span></a>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<ul class="list-unstyled components">
+							<li class="active">
+								<a href="index.html"><i class="fas fa-home"></i> Dashboard</a>
+							</li>
+							<li>
+								<a href="#orders" data-toggle="collapse" aria-expanded="false"><i class="fas fa-dollar-sign"></i>Orders</a>
+								<ul class="collapse list-unstyled submenu" id="orders">
+									<li><a href=""><i class="ti-angle-right"></i>All Orders</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Pending Orders</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Processing Orders</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Completed Orders</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Declined Orders</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#products" data-toggle="collapse" aria-expanded="false"><i class="fas fa-shopping-cart"></i>Products</a>
+								<ul class="collapse list-unstyled submenu" id="products">
+									<li><a href=""><i class="ti-angle-right"></i>All Products</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Deactivated Products</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#customers" data-toggle="collapse" aria-expanded="false"><i class="fas fa-users"></i>Customers</a>
+								<ul class="collapse list-unstyled submenu" id="customers">
+									<li><a href=""><i class="ti-angle-right"></i>Customers List</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Withdraws</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#vendors" data-toggle="collapse" aria-expanded="false"><i class="fas fa-users"></i>Vendors</a>
+								<ul class="collapse list-unstyled submenu" id="vendors">
+									<li><a href=""><i class="ti-angle-right"></i>Vendors List</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Withdraws</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#manageCategories" data-toggle="collapse" aria-expanded="false"><i class="fas fa-sitemap"></i>Manage Category</a>
+								<ul class="collapse list-unstyled submenu" id="manageCategories">
+									<li><a href="main-category.html"><i class="ti-angle-right"></i> Main category</a></li>
+									<li><a href="sub-category.html"><i class="ti-angle-right"></i> Sub category</a></li>
+									<li><a href="child-category.html"><i class="ti-angle-right"></i> Child category</a></li>
+								</ul>
+							</li>
+							<li><a href=""><i class="fas fa-percent"></i>Set Coupons</a></li>
+							<li><a href=""><i class="fas fa-file-alt"></i>Blog</a></li>
+							<li>
+								<a href="#generalSettings" data-toggle="collapse" aria-expanded="false"><i class="fas fa-cogs"></i>General Settings</a>
+								<ul class="collapse list-unstyled submenu" id="generalSettings">
+									<li><a href=""><i class="ti-angle-right"></i>Logo</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Favicon</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Loader</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Background Image</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Review Background Image</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Success Messages</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Picup Location</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Website Contents</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Footer</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Vendor Registration Option</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Affiliate Informations</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#homePageSettings" data-toggle="collapse" aria-expanded="false"><i class="fas fa-edit"></i>Home Page Settings</a>
+								<ul class="collapse list-unstyled submenu" id="homePageSettings">
+									<li><a href=""><i class="ti-angle-right"></i>Sliders</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Service Section</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Top Banners</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Bottom Banners</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Countdown Section</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Home Page Video</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Testimonial</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Brands</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Subscribe Popup Forms</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Customizations</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#menuPageSettings" data-toggle="collapse" aria-expanded="false"><i class="fas fa-file-code"></i>Menu Page Settings</a>
+								<ul class="collapse list-unstyled submenu" id="menuPageSettings">
+									<li><a href=""><i class="ti-angle-right"></i>FAQ Page</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Contact Us Page</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Other Pages</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#paymentSettings" data-toggle="collapse" aria-expanded="false"><i class="far fa-credit-card"></i>Payment Settings</a>
+								<ul class="collapse list-unstyled submenu" id="paymentSettings">
+									<li><a href=""><i class="ti-angle-right"></i>Payment Informations</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Payment Gateways</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Currency Settings</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#socialSettings" data-toggle="collapse" aria-expanded="false"><i class="fas fa-paper-plane"></i>Social Settings</a>
+								<ul class="collapse list-unstyled submenu" id="socialSettings">
+									<li><a href=""><i class="ti-angle-right"></i>Social Links</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Facebook Login</a></li>
+									<li><a href=""><i class="ti-angle-right"></i>Google Login</a></li>
+								</ul>
+							</li>
+							<li><a href=""><i class="fas fa-user-secret"></i>Manage Staffs</a></li>
+							<li><a href=""><i class="fas fa-language"></i>Language Settings</a></li>
+							<li>
+								<li>
+									<a href="#seoTools" data-toggle="collapse" aria-expanded="false"><i class="fas fa-wrench"></i>SEO Tools</a>
+									<ul class="collapse list-unstyled submenu" id="seoTools">
+										<li><a href=""><i class="ti-angle-right"></i> Google analytics</a></li>
+										<li><a href=""><i class="ti-angle-right"></i> Website meta keywords</a></li>
+									</ul>
+								</li>
+								<li><a href=""><i class="fas fa-users-cog"></i>Subscribers</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div> 
+			</div>
+			<!-- Menu end -->
+
+			<!-- Content start -->
+			<div class="wrap__right">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xl-12">
+							<!-- Admin haeder start -->
+							<div class="panel panel-default common">
+								<div class="panel-heading">
+									<div class="admin__header">
+										<div class="row reorder-xs align-items-center">
+											<div class="col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12">
+												<div class="header__title">
+													<h3>Processing Orders</h3>
+													<p>Dashboard <i class="fa fa-angle-right"></i> Orders <i class="fa fa-angle-right"></i> Processing Orders</p>
+												</div>
+											</div>
+											<div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12">
+												<div class="header-menu dropdown text-right">
+													<!-- profile message -->
+													<div class="header__wishlist message">
+														<a class="dropdown-toggle" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+															<img src="assets/images/admin-header/message.png" alt="flag image">
+															<span>4</span>
+														</a>
+
+														<div class="header__wishlist-content dropdown-menu">
+															<div class="header__wishlist-title">
+																<h5>Wishlist</h5>
+																<p>Clear All</p>
+															</div>
+															<div class="wishlist">
+																<div class="wishlist__img">
+																	<i class="fa fa-heart"></i>
+																</div>
+																<div class="wishlist__text">
+																	<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</h5>
+																	<p>1 min ago</p>
+																</div>
+															</div>
+														</div>
+													</div>
+													
+													<!-- profile wishlist -->
+													<div class="header__wishlist">
+														<a class="dropdown-toggle" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+															<img src="assets/images/admin-header/flag.png" alt="flag image">
+															<span>4</span>
+														</a>
+
+														<div class="header__wishlist-content dropdown-menu">
+															<div class="header__wishlist-title">
+																<h5>Wishlist</h5>
+																<p>Clear All</p>
+															</div>
+															<div class="wishlist">
+																<div class="wishlist__img">
+																	<i class="fa fa-heart"></i>
+																</div>
+																<div class="wishlist__text">
+																	<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</h5>
+																	<p>1 min ago</p>
+																</div>
+															</div>
+
+															<div class="wishlist">
+																<div class="wishlist__img">
+																	<i class="fa fa-heart"></i>
+																</div>
+																<div class="wishlist__text">
+																	<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</h5>
+																	<p>1 min ago</p>
+																</div>
+															</div>
+
+															<div class="wishlist">
+																<div class="wishlist__img">
+																	<i class="fa fa-heart"></i>
+																</div>
+																<div class="wishlist__text">
+																	<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</h5>
+																	<p>1 min ago</p>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- profile Nitification -->
+													<div class="header__notification">
+														<a class="dropdown-toggle" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+															<img src="assets/images/admin-header/notification.png" alt="notification image">
+															<span>80</span>
+														</a>
+
+														<div class="header__notification-content dropdown-menu">
+															<div class="header__notification-title">
+																<h5>Notification</h5>
+																<p>Clear All</p>
+															</div>
+															<div class="notification">
+																<div class="notification__img">
+																	<i class="fa fa-heart"></i>
+																</div>
+																<div class="notification__text">
+																	<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</h5>
+																	<p>1 min ago</p>
+																</div>
+															</div>
+															<div class="notification gray">
+																<div class="notification__img">
+																	<i class="fa fa-heart"></i>
+																</div>
+																<div class="notification__text">
+																	<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</h5>
+																	<p>1 min ago</p>
+																</div>
+															</div>
+															<div class="notification">
+																<div class="notification__img">
+																	<i class="fa fa-heart"></i>
+																</div>
+																<div class="notification__text">
+																	<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</h5>
+																	<p>1 min ago</p>
+																</div>
+															</div>
+															<div class="notification gray">
+																<div class="notification__img">
+																	<i class="fa fa-heart"></i>
+																</div>
+																<div class="notification__text">
+																	<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</h5>
+																	<p>1 min ago</p>
+																</div>
+															</div>
+															<div class="notification">
+																<div class="notification__img">
+																	<i class="fa fa-heart"></i>
+																</div>
+																<div class="notification__text">
+																	<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</h5>
+																	<p>1 min ago</p>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- Comments area -->
+													<div class="header__comments">
+														<a class="dropdown-toggle" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+															<img src="assets/images/admin-header/list.png" alt="list image">
+															<span>6</span>
+														</a>
+
+														<div class="header__comments-content dropdown-menu">
+															<div class="header__comments-title">
+																<h5>Chat</h5>
+																<p>Clear All</p>
+															</div>
+															<div class="comments">
+																<div class="comments__img">
+																	<img src="assets/images/admin-header/download.jpg" alt="comments image">
+																</div>
+																<div class="comments__text">
+																	<h5>Client Name</h5>
+																	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</p>
+																</div>
+															</div>
+															<div class="comments">
+																<div class="comments__img">
+																	<img src="assets/images/admin-header/download.jpg" alt="comments image">
+																</div>
+																<div class="comments__text">
+																	<h5>Client Name</h5>
+																	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</p>
+																</div>
+															</div>
+															<div class="comments">
+																<div class="comments__img">
+																	<img src="assets/images/admin-header/download.jpg" alt="comments image">
+																</div>
+																<div class="comments__text">
+																	<h5>Client Name</h5>
+																	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</p>
+																</div>
+															</div>
+															<div class="comments">
+																<div class="comments__img">
+																	<img src="assets/images/admin-header/download.jpg" alt="comments image">
+																</div>
+																<div class="comments__text">
+																	<h5>Client Name</h5>
+																	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</p>
+																</div>
+															</div>
+															<div class="comments">
+																<div class="comments__img">
+																	<img src="assets/images/admin-header/download.jpg" alt="comments image">
+																</div>
+																<div class="comments__text">
+																	<h5>Client Name</h5>
+																	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, eos.</p>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<!-- view profile -->
+													<div class="header__profile">
+														<div class="profile__img dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+															<img src="assets/images/menu/admin.jpg" alt="profile image"> <span>Admin</span>
+														</div>
+														<div class="profile__content dropdown-menu">
+															<h5>Welcome!</h5>
+															<a href="edit-profile.html"><i class="fas fa-user"></i> Edit Profile</a>
+															<a href="change-password.html"><i class="fas fa-cog"></i> Change Password</a>
+															<a href=""><i class="fas fa-power-off"></i> Logout</a>
+														</div>
+													</div>
+												</div> 
+											</div>
+										</div>   
+									</div>
+								</div>
+							</div>
+							<!-- Admin haeder end -->
+						</div>
+					</div>
+
+					<!-- Admin table start -->
+					<div class="row">
+						<div class="col-xl-12">
+							<div class="table-wrap mb-30">
+								<div class="table-responsive">
+									<table id="common-table" class="table table-striped table-hover common dt-responsive" cellspacing="0" width="100%">
+										<thead>
+											<tr>
+												<th>Customer Email</th>
+												<th>Invoice Number</th>
+												<th>Total Qty</th>
+												<th>Total Cost</th>
+												<th>Payment Method</th>
+												<th>Actions</th>
+											</tr>
+										</thead>
+
+										<tbody>
+											<tr>
+												<td>user@gmail.com</td>
+												<td><a class="colored-blue" href="">00000012</a></td>
+												<td>2</td>
+												<td>$1000</td>
+												<td>Stripe</td>
+												<td>
+													<a href="order-view-details.html" class="btn btn-primary table-btn"><i class="fas fa-eye"></i> View details</a>
+													<a href="contact-customer.html" class="btn btn-success table-btn"><i class="fas fa-paper-plane"></i> Send email</a>
+													<div class="btn-group orders dropdown">
+														<button type="button" class="btn dropdown-toggle table-btn green" data-toggle="dropdown">
+															Processing</button>
+															<ul class="dropdown-menu">
+																<li><a href="#" class="dropdown-item">Processing</a></li>
+																<li><a href="#" class="dropdown-item">Completed</a></li>
+															</ul>
+														</div>
+													</td>
+												</tr>
+												<tr>
+												<td>user@gmail.com</td>
+												<td><a class="colored-blue" href="">00000012</a></td>
+												<td>2</td>
+												<td>$1000</td>
+												<td>Cash on delivery</td>
+												<td>
+													<a href="order-view-details.html" class="btn btn-primary table-btn"><i class="fas fa-eye"></i> View details</a>
+													<a href="contact-customer.html" class="btn btn-success table-btn"><i class="fas fa-paper-plane"></i> Send email</a>
+													<div class="btn-group orders dropdown">
+														<button type="button" class="btn dropdown-toggle table-btn pending" data-toggle="dropdown">
+															Pending</button>
+															<ul class="dropdown-menu">
+																<li><a href="#" class="dropdown-item">Pending</a></li>
+																<li><a href="#" class="dropdown-item">Processing</a></li>
+																<li><a href="#" class="dropdown-item">Completed</a></li>
+															</ul>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Admin table end -->
+
+					</div>
+				</div>
+				<!-- Content end -->
+			</div>
+
+
+
+
+			<!-- jQuary Library -->
+			<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+			<script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
+			<script src="assets/js/popper.min.js"></script>
+
+			<!-- Bootstrap Min JS -->
+			<script src="assets/js/bootstrap.min.js"></script>
+
+			<!--Datatables JS-->
+			<script src="assets/js/jquery.dataTables.min.js"></script>
+
+			<!-- Bootstrap datatables JS -->
+			<script src="assets/js/dataTables.bootstrap4.js"></script>
+
+			<!-- Datatables responsive JS-->
+			<script src="assets/js/dataTables.responsive.min.js"></script>
+
+			<!-- Bootstrap colorpicker JS -->
+			<script src="assets/js/bootstrap-colorpicker.min.js"></script>
+
+			<!-- Bootstrap tags JS-->
+			<script src="assets/js/bootstrap-tags.min.js"></script>
+
+			<!-- Responsive Bootstrap JS-->
+			<script src="assets/js/responsive.bootstrap.min.js"></script>
+
+			<!--Easing JS-->
+			<script src="assets/js/jquery.easing.1.3.js"></script>
+
+			<!--Wow JS-->
+			<script src="assets/js/wow.min.js"></script>
+
+			<!--Perfect scrollbar JS-->
+			<script src="assets/js/perfect-scrollbar.jquery.min.js"></script>
+
+			<!--Canvas JS-->
+			<script src="assets/js/jquery.canvasjs.min.js"></script>
+
+			<!-- Google Main JS(all jQuary activation code here and always it will be bottom of all script tag) -->
+			<script src="assets/js/main.js"></script>
+		</body>
+		</html>

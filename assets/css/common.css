@@ -1,0 +1,290 @@
+/*--
+    - common css
+-----------------------------------------*/
+.overlay {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: #ddd;
+    background-size: cover;
+    background-position: center;
+	z-index: 1;
+}
+.overlay::after {
+	background: #7460ef;
+    background: -moz-linear-gradient(left, #7460ef 1%, #9262e2 36%, #cd4fa7 65%, #ed5eac 100%);
+    background: -webkit-linear-gradient(left, #7460ef 1%,#9262e2 36%,#cd4fa7 65%,#ed5eac 100%);
+    background: linear-gradient(to right, #7460ef 1%,#9262e2 36%,#cd4fa7 65%,#ed5eac 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7460ef', endColorstr='#ed5eac',GradientType=1 );
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	content: "";
+	opacity: .8;
+	z-index: -1;
+}
+.title-overlay-wrap {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    color: #ffffff;
+}
+/*---------- transition css ----------*/
+.transition-4s {transition: all .4s ease-in;}
+
+
+/*---------- common section CSS----------*/
+.section-title h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.slider__title p.colored__p,
+.section-title p.colored__p,
+.section-title p.white__p,
+.testimonial__author p.colored__p {
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 18px;
+    color: #573ef2 !important;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.section-title p {
+    margin-bottom: 35px;
+}
+.section-title p.white__p {color: #ffffff !important;}
+.section-title.color-white h1,
+.section-title.color-white p {color: #ffffff;}
+/*---------- button CSS----------*/
+.colored-btn {
+    background: #0382ff;
+    background: -webkit-linear-gradient(left, #0382ff 1%, #3064ff 36%, #693dff 65%, #832bff 100%);
+    background: -o-linear-gradient(left, #0382ff 1%, #3064ff 36%, #693dff 65%, #832bff 100%);
+    background: linear-gradient(to right, #0382ff 1%, #3064ff 36%, #693dff 65%, #832bff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0382ff', endColorstr='#832bff',GradientType=1 );
+}
+.radius__btn {
+    display: inline-block;
+    color: #fefefe;
+    font-size: 14px;
+    padding: 12px 40px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 0px 3px 20px 0px rgba(13, 21, 75, 0.3);
+    border: 1px solid transparent;
+    margin-right: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.radius__btn img {margin-right: 5px;}
+.radius__btn:hover,
+.radius__btn:focus {
+    color: #ffffff !important;
+    background: #505b6d !important;
+    border-color: #505b6d !important;
+}
+.bordered-btn {
+    background: #ffffff;
+    color: #505b6d;
+    border-color: #505b6d;
+    margin-right: 0;
+}
+/*---------- Background CSS----------*/
+.bg-css {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.gra-blue,
+.single-awesome__service.gra-blue,
+.featured__icon.gra-blue {
+    background: #9d5bfe;
+background: -moz-linear-gradient(top, #9d5bfe 1%, #7d6cfe 38%, #7470fe 66%, #3d8dfe 100%);
+background: -webkit-linear-gradient(top, #9d5bfe 1%,#7d6cfe 38%,#7470fe 66%,#3d8dfe 100%);
+background: linear-gradient(to bottom, #9d5bfe 1%,#7d6cfe 38%,#7470fe 66%,#3d8dfe 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9d5bfe', endColorstr='#3d8dfe',GradientType=0 );
+}
+.gra-orange,
+.single-awesome__service.gra-orange,
+.featured__icon.gra-orange {
+    background: #ffa858;
+    background: -webkit-linear-gradient(#ffa858 1%, #ff8e62 39%, #fe8068 66%, #fe6174 99%);
+background: -o-linear-gradient(#ffa858 1%, #ff8e62 39%, #fe8068 66%, #fe6174 99%);
+background: linear-gradient(#ffa858 1%, #ff8e62 39%, #fe8068 66%, #fe6174 99%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa858', endColorstr='#fe6174',GradientType=0 );
+}
+.gra-green,
+.single-awesome__service.gra-green,
+.featured__icon.gra-green {
+    background: #43e54a;
+background: -moz-linear-gradient(top, #43e54a 1%, #20e284 39%, #36e361 66%, #08e0ad 99%);
+background: -webkit-linear-gradient(top, #43e54a 1%,#20e284 39%,#36e361 66%,#08e0ad 99%);
+background: linear-gradient(to bottom, #43e54a 1%,#20e284 39%,#36e361 66%,#08e0ad 99%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#43e54a', endColorstr='#08e0ad',GradientType=0 );
+}
+
+.gra-span {
+    background: #d83cab;
+background: -moz-linear-gradient(left, #d83cab 0%, #913dd2 53%, #573ef2 53%, #207cca 53%, #207cca 53%, #207cca 53%, #913dd2 53%, #573ef2 100%);
+background: -webkit-linear-gradient(left, #d83cab 0%,#913dd2 53%,#573ef2 53%,#207cca 53%,#207cca 53%,#207cca 53%,#913dd2 53%,#573ef2 100%);
+background: linear-gradient(to right, #d83cab 0%,#913dd2 53%,#573ef2 53%,#207cca 53%,#207cca 53%,#207cca 53%,#913dd2 53%,#573ef2 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d83cab', endColorstr='#573ef2',GradientType=1 );
+}
+
+.gra-pink {
+    background: #ee3c9e;
+background: -moz-linear-gradient(top, #ee3c9e 3%, #a53dc7 40%, #b13dc1 65%, #593ef1 100%);
+background: -webkit-linear-gradient(top, #ee3c9e 3%,#a53dc7 40%,#b13dc1 65%,#593ef1 100%);
+background: linear-gradient(to bottom, #ee3c9e 3%,#a53dc7 40%,#b13dc1 65%,#593ef1 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee3c9e', endColorstr='#593ef1',GradientType=0 );
+}
+
+.gra-bluePink {
+    background: #563ce8;
+background: -moz-linear-gradient(45deg, #563ce8 0%, #7b3ede 39%, #be3db9 66%, #f03c9d 100%);
+background: -webkit-linear-gradient(45deg, #563ce8 0%,#7b3ede 39%,#be3db9 66%,#f03c9d 100%);
+background: linear-gradient(45deg, #563ce8 0%,#7b3ede 39%,#be3db9 66%,#f03c9d 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#563ce8', endColorstr='#f03c9d',GradientType=1 );
+}
+
+/*---------- Image border CSS----------*/
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 400ms ease-in;
+    transition: all 400ms ease-in;
+    background: #ee3c9e;
+background: -moz-linear-gradient(top, #ee3c9e 3%, #a53dc7 40%, #b13dc1 65%, #593ef1 100%);
+background: -webkit-linear-gradient(top, #ee3c9e 3%,#a53dc7 40%,#b13dc1 65%,#593ef1 100%);
+background: linear-gradient(to bottom, #ee3c9e 3%,#a53dc7 40%,#b13dc1 65%,#593ef1 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee3c9e', endColorstr='#593ef1',GradientType=0 );
+}
+.gallery-border {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 1px solid transparent;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+    -webkit-transition: all 400ms ease-in;
+    transition: all 400ms ease-in;
+    left: 10px;
+    bottom: 10px;
+    z-index: 2;
+}
+
+/*--------------04. Start of Scroll Top CSS------------------*/
+.scrollup {
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 56px;
+    right: 30px;
+    background: #573ef2;
+    border: 2px solid #573ef2;
+    color: #ffffff;
+    font-size: 16px;
+    background-position: center;
+    z-index: 999;
+    display: none;
+}
+.scrollup:hover {
+    background: #ffffff; 
+    color: #573ef2;
+}
+/*--------------04. End of Scroll Top CSS------------------*/
+
+/*--------------05. Start of PreLoader CSS------------------*/
+.app-site-preloader-wrap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #dddddd;
+    z-index: 9999;
+}
+.app-site-preloader-wrap .spinner2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+    background: transparent;
+}
+
+/*----------Jquery preloader css for body----------*/
+.spinner2 {
+  margin: 100px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner2 > div {
+  background-color: #fff;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+          animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner2 .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner2 .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner2 .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner2 .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+/*--------------05. End of PreLoader CSS------------------*/
+
+/*--------------Start of Owl carpusel------------------*/
+.owl-stage {
+    padding-bottom: 10px;
+}
+/*--------------End of Owl carpusel------------------*/
